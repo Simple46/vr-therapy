@@ -7,12 +7,17 @@ body {
 #overlay {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: black;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   z-index: 10;
+  padding: 20px;
+  overflow: scroll;
+
 }
 
 button {
@@ -27,4 +32,76 @@ button {
 canvas {
   display: none;
   background: black;
+}
+
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(0, 255, 255, 0.8);
+  cursor: pointer;
+  z-index: 11;
+  display: none;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 12;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#view-video {
+  background: cyan;
+}
+
+#download-video {
+  background: lightgreen;
+}
+
+#download-app {
+  background: orange;
 }

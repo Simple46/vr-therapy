@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Therapy VR App</title>
@@ -8,15 +9,66 @@
 </head>
 <body>
     <div id="overlay">
-  <button id="start">Enter VR</button>
+  <button id="start1">Depression VR</button>
+  <button id="start2">Anxiety VR</button>
+  <button id="start3">Pain Management Therapy VR</button>
+  <button id="start4">Breathing VR</button>
+  <button id="start5">Phobia & Exposure VR</button>
+  <button id="start6">Lonliness VR</button>
+  <button id="start7">Cancer Patient relaxation VR</button>
+  <button id="start8">Post Traumatic Stress Disorder VR</button>
+  <button id="start9"> Physical Rehabilitation Therapy VR</button>
+  <button id="start10">Cognitive Training for Nuerological Disorders VR</button>
+
   </div>
 
 
-<video id="video" loop playsinline style="display:none;">
-  <source src="./assets/tharapy-video.mp4" type="video/mp4">
+  <button class="btn-back">Back</button>
+<video preload="metadata" id="video1" loop playsinline style="display:none;">
+  <source src="./assets/video1.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video2" loop playsinline style="display:none;">
+  <source src="./assets/video2.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video3" loop playsinline style="display:none;">
+  <source src="./assets/video3\.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video4" loop playsinline style="display:none;">
+  <source src="./assets/video4.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video5" loop playsinline style="display:none;">
+  <source src="./assets/video5.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video6" loop playsinline style="display:none;">
+  <source src="./assets/video6.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video7" loop playsinline style="display:none;">
+  <source src="./assets/video7.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video8" loop playsinline style="display:none;">
+  <source src="./assets/video8.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video9" loop playsinline style="display:none;">
+  <source src="./assets/video9.mp4" type="video/mp4">
+</video>
+<video preload="metadata" id="video10" loop playsinline style="display:none;">
+  <source src="./assets/video10.mp4" type="video/mp4">
 </video>
 
 <canvas id="canvas"></canvas>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Video Options</h2>
+    <p>Choose an option for this video:</p>
+    <button id="view-video">View Video</button>
+    <button id="download-video">Download Video</button>
+    <p>For a better VR experience after downloading Video, download VR View App!</p>
+    <button id="download-app">Download VR View App</button>
+  </div>
+</div>
 <script src="script.js">
 
 </script>
