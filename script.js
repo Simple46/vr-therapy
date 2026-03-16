@@ -19,7 +19,7 @@ function resizeCanvas() {
 window.addEventListener("resize", resizeCanvas);
 
 // Get all start buttons
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 8; i++) {
   const startBtn = document.getElementById(`start${i}`);
   const video = document.getElementById(`video${i}`);
 
@@ -145,6 +145,6 @@ window.addEventListener("click", function (event) {
   }
 });
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-}
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/sw.js')
+// }
